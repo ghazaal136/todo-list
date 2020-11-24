@@ -1,0 +1,75 @@
+@keyframes inputMoving{
+    from{transform: translateY(-100px);}
+    to{transform: translateY(0);}
+}
+
+@keyframes moving{
+    from{margin-top: -300px;}
+    to{margin-top: 0;}
+}
+@font-face {
+    font-family: 'Yekan';
+    src: url('../fonts/BYekan.eot');
+    src: url('../fonts/BYekan.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BYekan.woff2') format('woff2'),
+        url('../fonts/BYekan.woff') format('woff'),
+        url('../fonts/BYekan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IH-Pe';
+    src: url('../fonts/IH-Pe.eot');
+    src: url('../fonts/IH-Pe.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/IH-Pe.woff2') format('woff2'),
+        url('../fonts/IH-Pe.woff') format('woff'),
+        url('../fonts/IH-Pe.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-family: "Yekan" !important;
+    overflow-x: hidden;
+    direction: rtl;
+}
+.header{
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20px 10px;
+    background-image:linear-gradient(to right, #fff , rgb(176, 201, 206), #fff);
+}
+.headerImg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.rounedbtn{
+    width: 50px;
+    height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  margin-left:5px !important;
+}
+.rounedbtn:hover{
+    color: #000;
+}
+.alert{
+    border: 1px solid rgb(214,214,214);
+    border-radius: 10px;
+}
+.animate{
+    animation-name: moving;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+.inputanimation {
+    animation-name: inputMoving;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
